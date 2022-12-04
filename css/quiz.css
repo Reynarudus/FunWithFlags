@@ -1,0 +1,281 @@
+#quizConteiner {
+    display: grid;
+    grid-template-columns: 60% 35%;
+    grid-template-rows: 23.25% 23.25% 23.25% 23.25%;
+    gap: 3%;
+    padding: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgba(0, 255, 255, 0.733);
+    border-radius: 18px;
+    height: 80%;
+
+}
+#quizConteiner>div {
+background-color: rgb(6, 104, 117);
+}
+#quizConteiner>.quizSelect {
+    grid-row: 1 / span 4;
+    background: linear-gradient(to left, rgb(241, 9, 222) 0%, rgb(0, 73, 107) 100%);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    overflow-y: scroll;
+
+}
+#quizConteiner>.quizSelect::-webkit-scrollbar {
+    width: 10px;
+}
+#quizConteiner>.quizSelect::-webkit-scrollbar-track {
+background-color:rgb(23, 0, 128);
+}
+#quizConteiner>.quizSelect::-webkit-scrollbar-thumb {
+    background-color:rgb(47, 0, 255);
+    }
+
+#quizConteiner>.quizSelect>.item_table {
+    width: 35%;
+    padding: 5%;
+    margin: 2%;
+    border-radius: 20px;
+    background-color: rgba(141, 141, 141, 0.623);
+    border-style: solid;
+    border-color:rgba(71, 71, 71, 0.623);
+    text-align: center;
+}
+
+#quizConteiner>.quizSelect>.item_table:hover {
+    background-color: white;
+   color:black;
+   font-weight: bold;
+   width: 40%;
+   transition: 0.7s;
+
+}
+
+
+#quizConteiner>#quizBackground {
+    grid-row: 1 / span 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#DescriptionANDButtonconteiner {
+    grid-row: 3 / span 2;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+#quizDescription {
+    text-align: center;
+}
+#quizButton {
+text-align: center;
+font-size: 3rem;
+color: rgb(31, 31, 31);
+background-color:rgb(192, 192, 192);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+/*Game Conteiner */ 
+#gameflexconteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 99%;
+
+
+}
+#gamegrid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 58% 10% 30%;
+    gap:2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgba(0, 255, 255, 0.733);
+    border-radius: 20px;
+    width: 60%;
+
+}
+
+#gamegrid > *{
+    background-color: rgb(0 73 107);;
+}
+#timmer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 1%;
+    font-size: 2rem;
+
+}
+#gamegrid > #optionsgrid {
+    display: grid;
+    grid-template-columns: 46% 46%;
+    column-gap: 8%;
+    row-gap: 5%;
+    padding: 0.5%;
+}
+
+#gamegrid > #optionsgrid >.optionsquiz {
+ background-color: rgba(0, 255, 255, 0.733);
+ border-radius: 2%;
+text-align: center;
+padding: 5%;
+}
+#gamegrid > #optionsgrid >.optionsquiz:hover {
+    background-color: rgb(181, 250, 255);
+    transition: 0.5s;
+
+   }
+   
+
+#ActualFlagPhoto  {   
+height: 100%;
+width:60%;
+background-color: rgb(0 73 107);;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+#ActualFlagPhoto  > img {
+    height: 100%;
+    width:80%;
+
+}
+#gameflag {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    padding-left: 5%; 
+    padding-right: 5%; 
+
+}
+#gameflag > #leftGameFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    width: 20%;
+}
+
+#leftGameFlex > #gameflag > h1 {
+display: block;
+width: 20%;
+height: 100%;
+text-align: center;
+}
+
+/*  End Game */
+#EndGame {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:6rem 6rem 6rem 6rem 6rem;
+    gap:10px;
+    margin-left: 29%;
+    padding: 2%;
+    background-color: rgba(0, 255, 255, 0.733);
+    border-radius: 20px;
+    width: 40%;
+}
+#Endgame > *{
+   background-color:  rgb(0 73 107);
+   text-align: center;
+   padding: 1%;
+   font-size : 45px;
+
+} 
+#GoToScoreTable:hover{
+    background-color: rgb(181, 250, 255);
+    transition: 0.5s;
+    color: black;
+
+}
+#Endgame > input,#viewAnswerButton {
+background-color:  rgb(0, 73, 107);
+color: white;
+}
+#Endgame > input:hover,#viewAnswerButton:hover {
+    transition: 0.2s;
+    background-color:  rgb(37, 129, 172);
+
+}
+#Endgame > input::placeholder,#viewAnswerButton{
+    font-size : 28px;
+}
+#viewAnswerButton {
+    height:100%;
+    width: 100%;
+    
+}
+.YourQuestion {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap:5%;
+    padding: 2%;
+    background-color: rgba(0, 255, 255, 0.733);
+    border-radius: 20px;
+    width: 94%;
+    height: 10rem;
+}
+.YourQuestionFlag  {
+    height:75%;
+    width:60%;
+}
+.YourQuestionFlag > img {
+    margin-left: 20%;
+    height:100%;
+    width:100%;
+}
+
+
+
+#EndGame > #AnswerConteinerFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    padding: 0%
+}
+#AnswerConteinerFlex > * {
+    margin: 2%;
+
+}
+#AnswerConteinerFlex > *:first-child,#AnswerConteinerFlex > *:last-child {
+    margin: 0%;
+
+}
+
+.YourQuestion > .YourAnswers {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.YourAnswers > * {
+    border-radius: 10%;
+    text-align: center;
+    font-size : 15px;
+    margin-bottom: 3%;
+   width: 55%;
+   padding:3% ;
+
+}
+.YourAnswers > *:last-child {
+    margin: 0%;
+}
+.standardAnswer {
+    background-color:rgb(44, 110, 110)
+    } 
+.wrongAnswer {
+    color: red;
+    background-color:rgb(110, 8, 8)
+
+}
+.trueAnswer {
+    color: greenyellow;
+    background-color:rgb(33, 230, 50);
+}
